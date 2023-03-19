@@ -49,7 +49,7 @@ const Jumbotron = () => {
           <div className="__main-content w-full md:w-1/2  flex flex-col justify-center items-center md:items-start">
             <h1 style={{fontWeight: 700}} className={'text-xl dark:text-slate-100 font-bold md:text-2xl text-slate-700'}><MdOutlineWavingHand className={"inline"}/> Welcome to</h1>
             <h1 style={{fontWeight: 700}} className={'text-3xl flex flex-col items-center justify-center md:items-start w-full py-4 font-bold md:text-4xl text-violet-400'}>
-              <span className={"bg-violet-100 text-violet-600 px-3 py-2 rounded-xl dark:bg-violet-900 dark:text-violet-300"}>GROUP 2</span>
+              <span className={"bg-violet-100 text-violet-600 px-3 py-2 rounded-xl dark:bg-violet-900 dark:text-violet-300"}>KELOMPOK 2</span>
               <p className={"py-3 text-lg lg:text-2xl"}><span ref={el}></span></p>
             </h1>
             <div className="__main-submenu py-5 w-full flex flex-col lg:flex-row lg:items-start gap-1 justify-center items-center">

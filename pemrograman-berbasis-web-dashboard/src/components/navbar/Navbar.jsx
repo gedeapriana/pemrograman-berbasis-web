@@ -24,7 +24,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav id={"navbar-root"} className={ scroll === true ? "w-full fixed border-b dark:border-b-slate-800 bg-slate-50 dark:bg-slate-800 h-20 lg:h-16 flex justify-center items-center" : "w-full fixed dark:border-b-slate-800 bg-slate-50 dark:bg-slate-800 h-20 lg:h-16 flex justify-center items-center"}>
+      <nav id={"navbar-root"} className={ scroll === true ? "w-full fixed border-b dark:border-b-slate-800 bg-white dark:bg-slate-800 h-20 lg:h-16 flex justify-center items-center" : "w-full fixed dark:border-b-slate-800 bg-white dark:bg-slate-800 h-20 lg:h-16 flex justify-center items-center"}>
       <section id={"navbar-wrapper"} className={'h-full w-11/12 lg:w-9/12 xl:w-8/12 flex justify-between items-center'}>
 
         {/* TODO:brand logo */}
