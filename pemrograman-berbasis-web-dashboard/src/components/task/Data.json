@@ -1,0 +1,134 @@
+[
+	{
+		"id": "1",
+		"title": "Konsep Dasar Web, Arsitektur Web, Server dan Client Side Scripting",
+		"meet": "Pertama",
+		"description": "",
+		"deadline date": "",
+		"link": {
+			"pengumpulan": "",
+			"template tugas": ""
+		},
+		"status": ""
+	}, 
+	{
+		"id": "2",
+		"title": "HTML (Hipertext Markup Language), tag-tag dasar HTML, tabel, form, frame pada html",
+		"meet": "Kedua, Ketiga",
+		"description": "",
+		"deadline date": "",
+		"link": {
+			"pengumpulan": "",
+			"template tugas": ""
+		},
+		"status": ""
+	}, 
+	{
+		"id": "3",
+		"title": "CSS (Cascading Style Sheet) dan Java Script (JS)",
+		"meet": "Keempat, Kelima",
+		"description": "",
+		"deadline date": "",
+		"link": {
+			"pengumpulan": "",
+			"template tugas": ""
+		},
+		"status": ""
+	}, 
+	{
+		"id": "4",
+		"title": "Bahasa Pemrograman Berbasis web PHP (PHP Hypertext Processor)",
+		"meet": "Keenam, Ketujuh",
+		"description": "",
+		"deadline date": "",
+		"link": {
+			"pengumpulan": "",
+			"template tugas": ""
+		},
+		"status": ""
+	}, 
+	{
+		"id": "5",
+		"title": "Ulangan Tengah Semester",
+		"meet": "Kedelapan",
+		"description": "",
+		"deadline date": "",
+		"link": {
+			"pengumpulan": "",
+			"template tugas": ""
+		},
+		"status": ""
+	}, 
+	{
+		"id": "6",
+		"title": "Penanganan Form dengan HTML dan PHP (POST/GET)",
+		"meet": "Kesebilan, Kesepuluh",
+		"description": "",
+		"deadline date": "",
+		"link": {
+			"pengumpulan": "",
+			"template tugas": ""
+		},
+		"status": ""
+	}, 
+	{
+		"id": "7",
+		"title": "Konsep Session dan Cookies Pada PHP",
+		"meet": "Kesebelas",
+		"description": "",
+		"deadline date": "",
+		"link": {
+			"pengumpulan": "",
+			"template tugas": ""
+		},
+		"status": ""
+	}, 
+	{
+		"id": "8",
+		"title": "Konsep Basis data dalam Pemrograman web dengan PHP dan MySql",
+		"meet": "Duabelas",
+		"description": "",
+		"deadline date": "",
+		"link": {
+			"pengumpulan": "",
+			"template tugas": ""
+		},
+		"status": ""
+	}, 
+	{
+		"id": "9",
+		"title": "Studi Kasus Aplikasi berbasis web",
+		"meet": "Tigabelas",
+		"description": "",
+		"deadline date": "",
+		"link": {
+			"pengumpulan": "",
+			"template tugas": ""
+		},
+		"status": ""
+	}, 
+	{
+		"id": "10",
+		"title": "Project",
+		"meet": "Empatbelas, Limabelas",
+		"description": "",
+		"deadline date": "",
+		"link": {
+			"pengumpulan": "",
+			"template tugas": ""
+		},
+		"status": ""
+	}, 
+	{
+		"id": "11",
+		"title": "UAS",
+		"meet": "Enambelas",
+		"description": "",
+		"deadline date": "",
+		"link": {
+			"pengumpulan": "",
+			"template tugas": ""
+		},
+		"status": ""
+	}, 
+]

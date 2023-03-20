@@ -8,6 +8,7 @@ import { BiTask } from 'react-icons/bi';
 import { RiErrorWarningLine } from 'react-icons/ri';
 import { BsSun } from 'react-icons/bs';
 import { BsMoon } from 'react-icons/bs';
+import { TbMessage2 } from 'react-icons/tb';
 
 const Navbar = () => {
 
@@ -42,10 +43,10 @@ const Navbar = () => {
         {/* TODO:List menu */}
         <div id={"__header-list-menu"} className={'hidden md:flex'}>
           <ul className={"flex gap-7"}>
-            <li><a href={"#"} className={"font-bold"}><FiHome/>Home</a></li>
-            <li><a href={"#"} className={"font-bold"}><MdOutlinePeopleAlt/>Member</a></li>
-            <li><a href={"#"} className={"font-bold"}><BiTask/>Tasks</a></li>
-            <li><a href={"#"} className={"font-bold"}><RiErrorWarningLine/>About</a></li>
+            <li><a href={"#"} className={"font-bold"}><FiHome/>Beranda</a></li>
+            <li><a href={"#"} className={"font-bold"}><MdOutlinePeopleAlt/>Anggota</a></li>
+            <li><a href={"#"} className={"font-bold"}><BiTask/>Tugas</a></li>
+            <li><a href={"#"} className={"font-bold"}><TbMessage2/>Kontak</a></li>
           </ul>
         </div>
         {/* List menu */}

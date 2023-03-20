@@ -17,7 +17,7 @@ const Jumbotron = () => {
 
   useEffect(() => {
     const options = {
-      strings: ['Class E', 'Pemrograman Berbasis Web'],
+      strings: ['Kelas E', 'Pemrograman Berbasis Web'],
       typeSpeed: 50,
       backSpeed: 50,
       loop: true,
