@@ -5,14 +5,16 @@
 		"pertemuan": "Pertama",
 		"description": {
 			"detail": "Tugas-1: Menyusun ringkasan dalam bentuk makalah tentang topik - topik utama pada pemrograman web",
-			"ketentuan": "Laporan (5 - 10 Halaman)"
+			"ketentuan": [
+				"Laporan (5 - 10 Halaman)"
+			]
 		},
 		"deadline": "Kamis, 30 Maret 2023, 12:00",
 		"link": {
 			"pengumpulan": "https://oase.unud.ac.id/mod/assign/view.php?id=346958",
 			"template tugas": "https://oase.unud.ac.id/mod/resource/view.php?id=346959"
 		},
-		"status": "Selesai",
+		"status": "Proses", 
 		"result": ""
 	}, 
 	{
@@ -20,10 +22,13 @@
 		"title": "HTML (Hipertext Markup Language), tag-tag dasar HTML, tabel, form, frame pada html",
 		"pertemuan": "Kedua, Ketiga",
 		"description": {
-			"detail": "",
-			"ketentuan": ""
+			"detail": "Tugas 2. Membuat halaman index dengan HTML",
+			"ketentuan": [
+				"Laporan (5 - 10 Halaman)",
+				"Link Website"
+			]
 		},
-		"deadline date": "",
+		"deadline": "Jumat, 16 Juni 2023, 12:00",
 		"link": {
 			"pengumpulan": "",
 			"template tugas": ""
@@ -36,7 +41,16 @@
 		"pertemuan": "Keempat, Kelima",
 		"description": {
 			"detail": "",
-			"ketentuan": ""
+			"ketentuan": [
+				"hehe",
+				"haha",
+				"hehe",
+				"haha",
+				"hehe",
+				"haha",
+				"hehe",
+				"haha"
+			]
 		},
 		"deadline date": "",
 		"link": {
