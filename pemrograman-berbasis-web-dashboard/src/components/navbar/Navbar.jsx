@@ -14,6 +14,7 @@ const Navbar = () => {
   const html = document.querySelector("html");
   const [toggle, setToggle] = useState(false);
   const [scroll, setScroll] = useState(false);
+  const [mobileNav, setMobileNav] = useState(false);
 
   window.addEventListener("scroll", function () {
     if (this.scrollY > 0) setScroll(true);
@@ -53,8 +54,47 @@ const Navbar = () => {
             id={"__headerhamburger-menu"}
             className={"md:hidden ml-auto cursor-pointer"}
           >
-            <GiHamburgerMenu size={40} className={"text-violet-400"} />
+            <GiHamburgerMenu
+              size={40}
+              onClick={() => {
+                setMobileNav(!mobileNav);
+              }}
+              className={"text-violet-400"}
+            />
           </div>
+
+          {mobileNav ? (
+            <nav className="absolute overflow-hidden m-3 right-0 top-20">
+              <div class="w-48 text-sm overflow-hidden font-medium md:hidden text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-slate-800 dark:border-gray-600 dark:text-white">
+                <a
+                  href="#"
+                  class="block w-full px-4 py-2 border-b border-gray-200 cursor-pointer hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white"
+                >
+                  Beranda
+                </a>
+                <a
+                  href="#__member-root"
+                  class="block w-full px-4 py-2 border-b border-gray-200 cursor-pointer hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white"
+                >
+                  Anggota
+                </a>
+                <a
+                  href="#__task-root"
+                  class="block w-full px-4 py-2 border-b border-gray-200 cursor-pointer hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white"
+                >
+                  Tugas
+                </a>
+                <a
+                  href="#__contact-root"
+                  class="block w-full px-4 py-2 rounded-b-lg cursor-pointer hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white"
+                >
+                  Kontak
+                </a>
+              </div>
+            </nav>
+          ) : (
+            ""
+          )}
           {/* hamburger */}
 
           {/* TODO:List menu */}
