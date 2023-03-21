@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* Navbar */
 @layer components {
   #__header-list-menu ul > li a {
