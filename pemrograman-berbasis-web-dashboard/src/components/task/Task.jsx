@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 
 import TaskAccordion from "./TaskAccordion";
+import TaskTable from "./TaskTable";
 import { BiTask } from "react-icons/bi";
+import { BsTable } from "react-icons/bs";
+import { TfiLayoutAccordionSeparated } from "react-icons/tfi"
 import { Dropdown } from "flowbite-react";
 
 const Task = () => {
+  const [accordionView, setAccordionView] = useState(true);
+  const [tableView, setTableView] = useState(false);
+
   return (
     <section
       id={"__task-root"}
@@ -27,25 +33,22 @@ const Task = () => {
           <BiTask className={"inline"} />
           Daftar Tugas
         </p>
-        <Dropdown
-          label="Tampilkan dalam bentuk"
-          dismissOnClick={false}
-          class="bg-violet-500 text-slate-50 rounded-xl"
-        >
-          <Dropdown.Item
-            onClick={() => {
-              alert("Hehe");
-            }}
-          >
-            Accordion
-          </Dropdown.Item>
-          <Dropdown.Item>Kartu</Dropdown.Item>
-          <Dropdown.Item>Tabel</Dropdown.Item>
-        </Dropdown>
+
+				<p className="text-slate-600 dark:text-slate-50">Tampilkan dalam bentuk</p>
+				<section className="flex justify-center items-center py-6 gap-1">
+					<button onClick={() => {
+						setAccordionView(true);
+						setTableView(false);
+					}} type="button" class="focus:outline-none text-white bg-violet-500 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"><TfiLayoutAccordionSeparated class="inline"/> Accordion</button>
+					<button onClick={() => {
+						setTableView(true);
+						setAccordionView(false);
+					}} type="button" class="focus:outline-none text-white bg-violet-500 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"><BsTable class="inline"/> Tabel</button>
+				</section>
 
         {/* data-section */}
         <section id="__task-data" className={"w-full p-10 lg:p-16"}>
-          <TaskAccordion />
+					{accordionView ? <TaskAccordion /> : <TaskTable />}
         </section>
         {/* data-section */}
       </section>
