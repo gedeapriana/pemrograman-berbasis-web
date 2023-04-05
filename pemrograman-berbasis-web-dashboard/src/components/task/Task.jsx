@@ -5,7 +5,6 @@ import TaskTable from "./TaskTable";
 import { BiTask } from "react-icons/bi";
 import { BsTable } from "react-icons/bs";
 import { TfiLayoutAccordionSeparated } from "react-icons/tfi"
-import { Dropdown } from "flowbite-react";
 
 const Task = () => {
   const [accordionView, setAccordionView] = useState(true);
