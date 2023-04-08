@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "header": "Anggota",
+    "desc": "List daftar anggota pada kelompok ini",
+    "icon": "group",
+    "link": "#anggota-root"
+  },
+  {
+    "id": 2,
+    "header": "Tugas",
+    "desc": "List daftar tugas yang sudah, belum, atau sedang dikerjakan",
+    "icon": "cog",
+    "link": "#tugas-root"
+  },
+  {
+    "id": 3,
+    "header": "Kontak",
+    "desc": "Kritik, saran, atau Bug? Beritahu kami :)",
+    "icon": "chat",
+    "link": "#kontak-root"
+  }
+]

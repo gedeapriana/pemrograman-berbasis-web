@@ -1,0 +1,12 @@
+@media (max-width: 768px) {
+	.__box-shadow-light:hover {
+		-webkit-box-shadow: 6px 7px 0px 0px rgba(3,7,18,1);
+		-moz-box-shadow: 6px 7px 0px 0px rgba(3,7,18,1);
+		box-shadow: 6px 7px 0px 0px rgba(3,7,18,1);
+	}
+	.__box-shadow-dark:hover {
+		-webkit-box-shadow: 6px 7px 0px 0px rgba(248,250,252,1);
+		-moz-box-shadow: 6px 7px 0px 0px rgba(248,250,252,1);
+		box-shadow: 6px 7px 0px 0px rgba(248,250,252,1);
+	}
+}

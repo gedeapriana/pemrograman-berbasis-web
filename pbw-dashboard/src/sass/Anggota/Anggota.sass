@@ -1,0 +1,43 @@
+@use "../variables" as var
+@use "../mixin" as mix
+
+#anggota-root
+  width: 100%
+  background-color: var.$base-light-color
+  height: auto
+  margin-top: 100px
+  @include mix.d-flex()
+
+  #anggota-wrapper
+    @include mix.d-flex()
+    flex-direction: column
+    height: 100%
+    width: 90%
+    gap: 30px
+    position: relative
+    z-index: 1
+    @media (min-width: 768px)
+      width: 80%
+    @media (min-width: 1024px)
+      width: 60%
+
+    #header
+      @include mix.d-flex()
+      flex-direction: column
+      h2
+        padding: 10px
+
+    #image
+      img
+        width: 100%
+        @media (min-width: 768px)
+          width: 400px
+
+    #card
+      width: 100%
+      flex-wrap: wrap
+      @include mix.d-flex(flex, space-between, center)
+      flex-direction: column
+      gap: 20px
+      @media (min-width: 1024px)
+        flex-direction: row

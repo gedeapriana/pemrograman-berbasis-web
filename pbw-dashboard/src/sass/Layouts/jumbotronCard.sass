@@ -1,0 +1,25 @@
+@use "../variables" as var
+@use "../mixin" as mix
+
+.jumbotron-card
+  width: 100%
+  padding: 15px
+  position: relative
+  @include mix.d-flex(flex, space-between, star)
+  flex-direction: column
+  border: 1.5px solid var.$base-dark-color
+  background-color: var.$base-light-color
+  @media (min-width: 1280px)
+    width: auto
+  height: auto
+
+  h3
+    padding: 16px 0
+  a
+    margin: 20px 0 0 auto
+    padding: 10px 15px
+    color: var.$base-dark-color
+    @include mix.d-flex()
+    &:hover
+      background-color: var.$base-dark-color
+      color: var.$base-light-color

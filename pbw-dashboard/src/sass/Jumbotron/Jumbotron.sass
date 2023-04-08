@@ -1,0 +1,76 @@
+@use "../variables" as var
+@use "../mixin" as mix
+
+#main-root
+  width: 100%
+  background-color: var.$base-light-color
+  height: auto
+  margin-top: 100px
+  @include mix.d-flex()
+
+  #main-wrapper
+    height: 100%
+    width: 90%
+    position: relative
+    z-index: 1
+    display: grid
+    gap: 20px
+    grid-template-columns: 1fr
+    grid-template-rows: 1fr auto auto
+    grid-template-areas: "image" "header" "card"
+    @media (min-width: 768px)
+      width: 80%
+    @media (min-width: 1024px)
+      width: 60%
+      grid-template-columns: .5fr 1fr
+      grid-template-rows: .5fr 1fr
+      grid-template-areas: "image header" "image card"
+
+    #main-image-section
+      grid-area: image
+      @include mix.d-flex()
+      img
+        width: 200px
+        margin: 140px 0 0 0
+        @media (min-width: 768px)
+          width: 220px
+        @media (min-width: 1024px)
+          margin: 0 0 0 0
+          width: 230px
+
+    #main-header-section
+      grid-area: header
+      @include mix.d-flex()
+      flex-direction: column
+      padding: 50px 0
+      @media (min-width: 1024px)
+        @include mix.d-flex(flex, center, start)
+        padding: 0
+      h3
+        padding: 10px
+      h1
+        padding: 10px
+        position: relative
+        background-color: var.$base-light-color
+        border: solid 1.5px var.$base-dark-color
+        &::after
+          content: ""
+          position: absolute
+          display: block
+          background: transparent
+          left: 3px
+          top: 3px
+          width: 100%
+          height: 100%
+          border: solid 1.5px var.$base-dark-color
+          z-index: -1
+
+    #main-card-section
+      gap: 20px
+      @include mix.d-flex()
+      flex-direction: column
+      @media (min-width: 1280px)
+        justify-content: start
+        align-items: start
+        flex-direction: row
+      grid-area: card

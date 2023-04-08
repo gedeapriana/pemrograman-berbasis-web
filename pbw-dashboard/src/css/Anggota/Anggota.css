@@ -1,0 +1,63 @@
+#anggota-root {
+  width: 100%;
+  background-color: #ffffff;
+  height: auto;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#anggota-root #anggota-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 90%;
+  gap: 30px;
+  position: relative;
+  z-index: 1;
+}
+@media (min-width: 768px) {
+  #anggota-root #anggota-wrapper {
+    width: 80%;
+  }
+}
+@media (min-width: 1024px) {
+  #anggota-root #anggota-wrapper {
+    width: 60%;
+  }
+}
+#anggota-root #anggota-wrapper #header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#anggota-root #anggota-wrapper #header h2 {
+  padding: 10px;
+}
+#anggota-root #anggota-wrapper #image img {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #anggota-root #anggota-wrapper #image img {
+    width: 400px;
+  }
+}
+#anggota-root #anggota-wrapper #card {
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (min-width: 1024px) {
+  #anggota-root #anggota-wrapper #card {
+    flex-direction: row;
+  }
+}
+
+/*# sourceMappingURL=Anggota.css.map */

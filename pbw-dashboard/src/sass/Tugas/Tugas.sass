@@ -1,0 +1,51 @@
+@use "../variables" as var
+@use "../mixin" as mix
+
+#tugas-root
+  width: 100%
+  background-color: var.$base-light-color
+  margin-top: 100px
+  @include mix.d-flex()
+  @media (min-width: 1024px)
+    overflow: scroll
+
+  #tugas-wrapper
+    height: 100%
+    width: 90%
+    gap: 20px
+    @include mix.d-flex(flex, center, start)
+    flex-direction: column-reverse
+    @media (min-width: 768px)
+      width: 80%
+    @media (min-width: 1024px)
+      width: 60%
+      flex-direction: row
+      gap: 50px
+
+    #tugas-section
+      width: 100%
+      @include mix.d-flex()
+      flex-direction: column
+      gap: 10px
+      position: relative
+      z-index: 1
+      @media (min-width: 1024px)
+        width: 70%
+        height: 100%
+
+    #tugas-image
+      width: 100%
+      @include mix.d-flex()
+      flex-direction: column
+      @media (min-width: 1024px)
+        width: 30%
+        height: 100%
+      h2
+        padding: 10px
+      p
+        text-align: center
+      img
+        width: 230px
+        margin: 50px 0
+        @media (min-width: 1024px)
+          width: 260px

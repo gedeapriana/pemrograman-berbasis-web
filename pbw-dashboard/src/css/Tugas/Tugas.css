@@ -1,0 +1,80 @@
+#tugas-root {
+  width: 100%;
+  background-color: #ffffff;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  #tugas-root {
+    overflow: scroll;
+  }
+}
+#tugas-root #tugas-wrapper {
+  height: 100%;
+  width: 90%;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column-reverse;
+}
+@media (min-width: 768px) {
+  #tugas-root #tugas-wrapper {
+    width: 80%;
+  }
+}
+@media (min-width: 1024px) {
+  #tugas-root #tugas-wrapper {
+    width: 60%;
+    flex-direction: row;
+    gap: 50px;
+  }
+}
+#tugas-root #tugas-wrapper #tugas-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  z-index: 1;
+}
+@media (min-width: 1024px) {
+  #tugas-root #tugas-wrapper #tugas-section {
+    width: 70%;
+    height: 100%;
+  }
+}
+#tugas-root #tugas-wrapper #tugas-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 1024px) {
+  #tugas-root #tugas-wrapper #tugas-image {
+    width: 30%;
+    height: 100%;
+  }
+}
+#tugas-root #tugas-wrapper #tugas-image h2 {
+  padding: 10px;
+}
+#tugas-root #tugas-wrapper #tugas-image p {
+  text-align: center;
+}
+#tugas-root #tugas-wrapper #tugas-image img {
+  width: 230px;
+  margin: 50px 0;
+}
+@media (min-width: 1024px) {
+  #tugas-root #tugas-wrapper #tugas-image img {
+    width: 260px;
+  }
+}
+
+/*# sourceMappingURL=Tugas.css.map */

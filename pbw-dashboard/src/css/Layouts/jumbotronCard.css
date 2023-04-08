@@ -1,0 +1,34 @@
+.jumbotron-card {
+  width: 100%;
+  padding: 15px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: star;
+  flex-direction: column;
+  border: 1.5px solid #131515;
+  background-color: #ffffff;
+  height: auto;
+}
+@media (min-width: 1280px) {
+  .jumbotron-card {
+    width: auto;
+  }
+}
+.jumbotron-card h3 {
+  padding: 16px 0;
+}
+.jumbotron-card a {
+  margin: 20px 0 0 auto;
+  padding: 10px 15px;
+  color: #131515;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.jumbotron-card a:hover {
+  background-color: #131515;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=jumbotronCard.css.map */

@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Kenny",
+    "fullName": "Kenny Belle Lesmana",
+    "nim": "2108561015",
+    "wa": "wa/kenny",
+    "ig": "ig/kenny",
+    "email": "email/kenny"
+  },
+  {
+    "id": 2,
+    "name": "Apriana",
+    "fullName": "I Komang Gede Apriana",
+    "nim": "2108561031",
+    "wa": "wa/apriana",
+    "ig": "ig/apriana",
+    "email": "email/apriana"
+  },
+  {
+    "id": 3,
+    "name": "Albert",
+    "fullName": "Albert Okario",
+    "nim": "2108561059",
+    "wa": "wa/albert",
+    "ig": "ig/albert",
+    "email": "email/albert"
+  },
+  {
+    "id": 4,
+    "name": "Wisnu",
+    "fullName": "I Gusti Putu Wisnu Wardhana",
+    "nim": "2108561064",
+    "wa": "wa/wisnu",
+    "ig": "ig/wisnu",
+    "email": "email/wisnu"
+  }
+]
