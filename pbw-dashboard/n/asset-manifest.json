@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f151b420.css",
+    "main.js": "/static/js/main.60544e98.js",
+    "static/media/tugas.png": "/static/media/tugas.ad61f61fdd8b7bf2ba99.png",
+    "static/media/teamgoup.png": "/static/media/teamgoup.bea841c1a1c847162589.png",
+    "static/media/montserrat.ttf": "/static/media/montserrat.3faa3eef13649db02044.ttf",
+    "static/media/anggota.png": "/static/media/anggota.1849a59bacab2926bd69.png",
+    "index.html": "/index.html",
+    "main.f151b420.css.map": "/static/css/main.f151b420.css.map",
+    "main.60544e98.js.map": "/static/js/main.60544e98.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f151b420.css",
+    "static/js/main.60544e98.js"
+  ]
+}
