@@ -25,14 +25,14 @@ const Navbar = () => {
         
         {/* Nav list*/}
           <ul id={"nav-list"} style={mobileNavList && mobileView ? {transform: "translateX(500px)"} : {transform: "translateX(0)"}}>
-            <li><a href=""><RiHomeLine />Beranda</a></li>
-            <li><a href=""><MdPeopleOutline />Anggota</a></li>
-            <li><a href=""><BsCodeSlash />Tugas</a></li>
+            <li><a href={"#main-root"}><RiHomeLine />Beranda</a></li>
+            <li><a href={"#anggota-root"}><MdPeopleOutline />Anggota</a></li>
+            <li><a href={"#tugas-root"}><BsCodeSlash />Tugas</a></li>
           </ul>
         {/* Nav list end*/}
         
         {/* Kontak button */}
-          <a href="" id={"nav-contact"}>Kontak</a>
+          <a href={"#kontak-root"} id={"nav-contact"}>Kontak</a>
         {/* Kontak button end */}
         
         {/* Hamburger */}

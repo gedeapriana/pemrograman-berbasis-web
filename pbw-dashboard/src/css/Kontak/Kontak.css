@@ -1,0 +1,99 @@
+#kontak-root {
+  width: 100%;
+  background-color: #ffffff;
+  height: auto;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#kontak-root #kontak-wrapper {
+  height: 100%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  #kontak-root #kontak-wrapper {
+    width: 80%;
+  }
+}
+@media (min-width: 1024px) {
+  #kontak-root #kontak-wrapper {
+    width: 60%;
+    flex-direction: row;
+  }
+}
+#kontak-root #kontak-wrapper #kontak-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 1024px) {
+  #kontak-root #kontak-wrapper #kontak-image {
+    width: 40%;
+  }
+}
+#kontak-root #kontak-wrapper #kontak-image img {
+  width: 400px;
+  padding: 30px;
+}
+@media (min-width: 1024px) {
+  #kontak-root #kontak-wrapper #kontak-image img {
+    max-width: 500px;
+  }
+}
+#kontak-root #kontak-wrapper #kontak-content {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  #kontak-root #kontak-wrapper #kontak-content {
+    width: 60%;
+  }
+}
+#kontak-root #kontak-wrapper #kontak-content form, #kontak-root #kontak-wrapper #kontak-content form > div {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+}
+@media (min-width: 1024px) {
+  #kontak-root #kontak-wrapper #kontak-content form {
+    padding: 0 60px;
+  }
+}
+#kontak-root #kontak-wrapper #kontak-content form > div {
+  gap: 12px;
+  padding: 10px 0;
+}
+#kontak-root #kontak-wrapper #kontak-content form > div > input {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+}
+#kontak-root #kontak-wrapper #kontak-content form > div textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+}
+#kontak-root #kontak-wrapper #kontak-content form button {
+  font-size: 1.2rem;
+  padding: 10px 15px;
+  background-color: #131515;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  margin: 20px 0 0 auto;
+}
+#kontak-root #kontak-wrapper #kontak-content form button:hover {
+  background-color: #ffffff;
+  color: #131515;
+  border: 1.5px solid #131515;
+}
+
+/*# sourceMappingURL=Kontak.css.map */

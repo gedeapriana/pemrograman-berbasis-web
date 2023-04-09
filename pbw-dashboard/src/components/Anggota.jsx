@@ -21,7 +21,7 @@ function Anggota(props) {
             {
               DataAnggota.map((data) => {
                 return (
-                    <AnggotaCard key={data.id} Name={data.name} FullName={data.fullName} Nim={data.nim} />
+                  <AnggotaCard key={data.id} Name={data.name} FullName={data.fullName} Nim={data.nim} />
                 )
               })
             }

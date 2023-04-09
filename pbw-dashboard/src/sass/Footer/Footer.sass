@@ -1,0 +1,36 @@
+@use "../variables" as var
+@use "../mixin" as mix
+
+#footer-root
+  width: 100%
+  padding: 30px 0
+  background-color: var.$base-dark-color
+  margin-top: 100px
+  @include mix.d-flex()
+  #footer-wrapper
+    height: 100%
+    width: 90%
+    @include mix.d-flex()
+    flex-direction: column
+    @media (min-width: 768px)
+      width: 80%
+    @media (min-width: 1024px)
+      width: 60%
+
+    h2
+      color: var.$base-light-color
+      padding: 20px
+
+    #icon
+      @include mix.d-flex()
+      padding: 10px
+      gap: 10px
+      & i
+        font-size: 3rem
+        color: gray
+
+    p
+      color: var.$base-light-color
+      padding: 10px
+      text-align: center
+      line-height: 20px

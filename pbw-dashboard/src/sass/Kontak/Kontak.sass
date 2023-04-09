@@ -1,0 +1,70 @@
+@use "../variables" as var
+@use "../mixin" as mix
+
+#kontak-root
+  width: 100%
+  background-color: var.$base-light-color
+  height: auto
+  margin-top: 100px
+  @include mix.d-flex()
+
+  #kontak-wrapper
+    height: 100%
+    width: 90%
+    @include mix.d-flex(flex, center, start)
+    flex-direction: column
+    @media (min-width: 768px)
+      width: 80%
+    @media (min-width: 1024px)
+      width: 60%
+      flex-direction: row
+
+    #kontak-image
+      width: 100%
+      @include mix.d-flex()
+      flex-direction: column
+      @media (min-width: 1024px)
+        width: 40%
+
+      img
+        width: 400px
+        padding: 30px
+        @media (min-width: 1024px)
+          max-width: 500px
+
+    #kontak-content
+      width: 100%
+      @media (min-width: 1024px)
+        width: 60%
+
+      form, form > div
+        width: 100%
+        @include mix.d-flex(flex, start, start)
+        flex-direction: column
+
+      form
+        @media (min-width: 1024px)
+          padding: 0 60px
+        & > div
+          gap: 12px
+          padding: 10px 0
+          & > input
+            width: 100%
+            height: 40px
+            padding: 0 10px
+          & textarea
+            width: 100%
+            height: 150px
+            padding: 10px
+        & button
+          font-size: 1.2rem
+          padding: 10px 15px
+          background-color: var.$base-dark-color
+          color: var.$base-light-color
+          border: none
+          cursor: pointer
+          margin: 20px 0 0 auto
+          &:hover
+            background-color: var.$base-light-color
+            color: var.$base-dark-color
+            border: 1.5px solid var.$base-dark-color
