@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+	/* navbar */
+	#__nav-list > li a {
+		@apply text-primary-dark dark:text-primary-light flex justify-center items-center gap-1;
+	}
+}

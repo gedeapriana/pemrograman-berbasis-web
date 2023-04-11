@@ -24,7 +24,7 @@ const Navbar = () => {
         {/*Nav Brand End*/ }
         
         {/* Nav list*/}
-          <ul id={"nav-list"} style={mobileNavList && mobileView ? {transform: "translateX(500px)"} : {transform: "translateX(0)"}}>
+          <ul id={"nav-list"}>
             <li><a href={"#main-root"}><RiHomeLine />Beranda</a></li>
             <li><a href={"#anggota-root"}><MdPeopleOutline />Anggota</a></li>
             <li><a href={"#tugas-root"}><BsCodeSlash />Tugas</a></li>
