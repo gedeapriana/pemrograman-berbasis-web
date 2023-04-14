@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* Navbar */
+  #navbar-list > li a {
+    @apply font-[raleway] hover:font-bold text-slate-900
+  }
+}

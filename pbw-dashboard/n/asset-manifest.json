@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.dce78b4c.css",
-    "main.js": "/static/js/main.a9ccdf1f.js",
+    "main.js": "/static/js/main.52148716.js",
     "static/media/tugas.png": "/static/media/tugas.ad61f61fdd8b7bf2ba99.png",
     "static/media/kontak.png": "/static/media/kontak.115189b8c5636427b35a.png",
     "static/media/teamgoup.png": "/static/media/teamgoup.bea841c1a1c847162589.png",
@@ -9,10 +9,10 @@
     "static/media/anggota.png": "/static/media/anggota.1849a59bacab2926bd69.png",
     "index.html": "/index.html",
     "main.dce78b4c.css.map": "/static/css/main.dce78b4c.css.map",
-    "main.a9ccdf1f.js.map": "/static/js/main.a9ccdf1f.js.map"
+    "main.52148716.js.map": "/static/js/main.52148716.js.map"
   },
   "entrypoints": [
     "static/css/main.dce78b4c.css",
-    "static/js/main.a9ccdf1f.js"
+    "static/js/main.52148716.js"
   ]
 }
