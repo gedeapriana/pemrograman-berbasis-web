@@ -2,7 +2,9 @@
   <div id="jumbotron-welcome" class="">
     <h1 class="text-[2rem] md:text-[2.5rem] lg:text-[3rem] font-[dm-serif]">Hello World</h1>
     <form action="" class="w-9/12 flex gap-2">
-      <input type="text" name="seach" class="border-[1px] font-[raleway] border-slate-900 py-2 px-5 my-3 rounded-full grow" placeholder="Cari apa saja..." required>
+      <label>
+        <input type="text" name="seach" class="border-[1px] font-[raleway] border-slate-900 py-2 px-5 my-3 rounded-full grow" placeholder="Cari apa saja..." required>
+      </label>
       <button type="submit" class="border-[1px] font-[raleway] border-slate-900 py-2 px-5 my-3 rounded-full">Cari</button>
     </form>
     <p class="text-[.9rem] md:text-[1rem] lg:text-[1.2rem] w-10/12 font-[raleway]">Temukan cerita, pemikiran, dan keahlian dari penulis tentang topik apa pun.</p>

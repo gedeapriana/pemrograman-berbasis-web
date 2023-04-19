@@ -26,17 +26,23 @@
         left: 4px
         top: 4px
 
+#home-category-root
+  #home-category-content
+    -ms-overflow-style: none
+    &::-webkit-scrollbar
+      display: none
+
 #home-post-root
   display: grid
   grid-template-columns: 1fr 1fr
-  grid-template-rows: .2fr 1fr 1fr 1fr
+  grid-template-rows: .2fr 1fr 1fr 1fr auto
   gap: 20px
-  grid-template-areas: 'header header' 'main sub-1' 'main sub-2' 'main sub-3'
+  grid-template-areas: 'header header' 'main sub-1' 'main sub-2' 'main sub-3' 'footer footer'
   @media (max-width: 768px)
     grid-template-columns: 1fr
-    grid-template-rows: .2fr 2fr 1fr 1fr 1fr
+    grid-template-rows: .2fr 2fr auto auto auto auto
     gap: 20px
-    grid-template-areas: 'header' 'main' 'sub-1' 'sub-2' 'sub-3'
+    grid-template-areas: 'header' 'main' 'sub-1' 'sub-2' 'sub-3' 'footer'
 
   #home-post-header
     grid-area: header
@@ -44,11 +50,40 @@
   #home-post-main
     grid-area: main
 
+    #main-post-desc
+      #detail
+        #detail-main
+          #sub-title
+            #post-content-shadow
+              background: rgb(255,255,255)
+              background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)
+
   #home-post-sub-1
     grid-area: sub-1
+    #detail
+      #detail-main
+        #sub-title
+          #post-content-shadow
+            background: rgb(255,255,255)
+            background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)
 
   #home-post-sub-2
     grid-area: sub-2
+    #detail
+      #detail-main
+        #sub-title
+          #post-content-shadow
+            background: rgb(255,255,255)
+            background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)
 
   #home-post-sub-3
     grid-area: sub-3
+    #detail
+      #detail-main
+        #sub-title
+          #post-content-shadow
+            background: rgb(255,255,255)
+            background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)
+
+  #home-post-footer
+    grid-area: footer

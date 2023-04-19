@@ -1,5 +1,8 @@
 @extends('schema.schema')
 
 @section('container')
-  <div class="text-2xl">Kategory</div>
+  {{$data}}
+  <div class="text-2xl">
+
+  </div>
 @endsection
