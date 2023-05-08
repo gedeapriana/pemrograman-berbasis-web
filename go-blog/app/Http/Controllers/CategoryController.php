@@ -10,7 +10,7 @@ class CategoryController extends Controller
     public function index() {
         return view('category', [
             'title'=>'category',
-            'data'=>Category::all()
+            'categories'=>Category::all()
         ]);
     }
 }

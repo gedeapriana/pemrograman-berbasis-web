@@ -14,6 +14,6 @@
   <i class='bx bx-dots-vertical-rounded text-2xl'></i>
 </div>
 
-<div id="navbar-profile">
-  <div class="rounded-full h-12 w-12 bg-slate-900"></div>
+<div id="navbar-login">
+  <a href="/login" class="inline-block font-[raleway] border-[1px] border-t-slate-200 rounded-full hover:text-slate-200 hover:bg-slate-950 py-2 px-5">Sign Up</a>
 </div>

@@ -13,7 +13,7 @@
   </head>
   <body>
     {{-- Navbar --}}
-    <nav id="navbar-root" class="w-full h-20 border-b-[1px] border-slate-500 flex items-center justify-center">
+    <nav id="navbar-root" class="w-full h-20 border-b-[1px] border-slate-200 flex items-center justify-center">
       <div id="navbar-wrapper" class="h-full w-11/12 md:w-10/12 lg:w-9/12 xl:w-8/12 flex justify-between items-center">
         @include('partials.navbar')
       </div>
@@ -25,7 +25,7 @@
     {{-- Content   --}}
 
 
-    <nav id="footer-root" class="w-full h-auto border-b-[1px] bg-white border-slate-500 flex items-center justify-center">
+    <nav id="footer-root" class="w-full h-auto border-b-[1px] bg-white border-slate-200 flex items-center justify-center">
       <div id="footer-wrapper" class="h-full w-11/12 md:w-10/12 lg:w-9/12 xl:w-8/12 flex justify-between items-center">
         @include('partials.footer')
       </div>

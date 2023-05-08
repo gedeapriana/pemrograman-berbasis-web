@@ -4,6 +4,10 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\WriterController;
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RegistrationController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,16 +20,19 @@ use App\Http\Controllers\CategoryController;
 */
 
 Route::get('/', [HomeController::class, 'index']);
+
 Route::get('/post', [PostController::class, 'index']);
+Route::get('/post/{slug}', [PostController::class, 'post']);
+
 Route::get('/kategori', [CategoryController::class, 'index']);
 
-Route::get('/penulis', function () {
-  return view('writer', [
-    'title'=>'writer'
-  ]);
-});
-Route::get('/tentang', function () {
-  return view('about', [
-    'title'=>'about'
-  ]);
-});
+Route::get('/penulis', [WriterController::class, 'index']);
+
+Route::get('/tentang', [AboutController::class, 'index']);
+
+Route::get('/login', [LoginController::class, 'index']);
+
+Route::get('/register', [RegistrationController::class, 'index']);
+Route::post('/register', [RegistrationController::class, 'store']);
+
+
