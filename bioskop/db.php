@@ -5,9 +5,9 @@
 }*/
 
 $host="localhost";
-$username="root";
-$password="";
-$db_name="db_movies";
+$username="id20720464_vrticket";
+$password="VRTIC,kelompok5";
+$db_name="id20720464_db_movies";
 // Create connection
 $db = new mysqli($host, $username, $password,$db_name);
 // Check connection

@@ -1,0 +1,85 @@
+#jumbotron-root {
+  position: relative;
+  z-index: 1;
+}
+#jumbotron-root #jumbotron-welcome {
+  position: relative;
+}
+#jumbotron-root #jumbotron-welcome a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background: inherit;
+  border-radius: inherit;
+  border: inherit;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: all ease-in-out 0.3s;
+  background-color: #0f172a;
+}
+#jumbotron-root #jumbotron-welcome a:hover::after {
+  left: 4px;
+  top: 4px;
+}
+
+#home-category-root #home-category-content {
+  -ms-overflow-style: none;
+}
+#home-category-root #home-category-content::-webkit-scrollbar {
+  display: none;
+}
+
+#home-post-root {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.2fr 1fr 1fr 1fr auto;
+  gap: 20px;
+  grid-template-areas: "header header" "main sub-1" "main sub-2" "main sub-3" "footer footer";
+}
+@media (max-width: 768px) {
+  #home-post-root {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 2fr auto auto auto auto;
+    gap: 20px;
+    grid-template-areas: "header" "main" "sub-1" "sub-2" "sub-3" "footer";
+  }
+}
+#home-post-root #home-post-header {
+  grid-area: header;
+}
+#home-post-root #home-post-main {
+  grid-area: main;
+}
+#home-post-root #home-post-main #main-post-desc #detail #detail-main #sub-title #post-content-shadow {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
+}
+#home-post-root #home-post-sub-1 {
+  grid-area: sub-1;
+}
+#home-post-root #home-post-sub-1 #detail #detail-main #sub-title #post-content-shadow {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
+}
+#home-post-root #home-post-sub-2 {
+  grid-area: sub-2;
+}
+#home-post-root #home-post-sub-2 #detail #detail-main #sub-title #post-content-shadow {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
+}
+#home-post-root #home-post-sub-3 {
+  grid-area: sub-3;
+}
+#home-post-root #home-post-sub-3 #detail #detail-main #sub-title #post-content-shadow {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
+}
+#home-post-root #home-post-footer {
+  grid-area: footer;
+}
+
+/*# sourceMappingURL=home.css.map */

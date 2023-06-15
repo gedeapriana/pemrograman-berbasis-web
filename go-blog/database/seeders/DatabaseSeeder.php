@@ -7,6 +7,7 @@ use App\Models\Category;
 use Illuminate\Database\Seeder;
 use App\Models\Post;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 
 class DatabaseSeeder extends Seeder
 {
@@ -121,6 +122,14 @@ class DatabaseSeeder extends Seeder
         'role' => 'writer',
         'email' => 'wisnu@gmail.com',
         'password' => '12345678'
+      ],
+      [
+        'username' => 'pri',
+        'name' => 'priana',
+        'slug' => 'pri',
+        'role' => 'writer',
+        'email' => 'pri@gmail.com',
+        'password' => Hash::make('1111')
       ]
     ];
 

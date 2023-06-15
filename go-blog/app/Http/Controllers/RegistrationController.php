@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Testing\Fluent\Concerns\Has;
 
 class RegistrationController extends Controller
 {
@@ -21,15 +23,14 @@ class RegistrationController extends Controller
       'password' => ['required', 'min:8', 'max:255']
     ]);
 
-    $validatedData['password'] = bcrypt($validatedData['password']);
+    $validatedData['password'] = Hash::make($validatedData['password']);
 
     $remain_data = [
       'slug' => strtolower($validatedData['username']),
       'role' => 'writer'
     ];
-
     $recap = array_merge($validatedData, $remain_data);
-
     User::create($recap);
+    return redirect('/login')->with('success', 'Registrasi Berhasil, Silahkan Login');
   }
 }

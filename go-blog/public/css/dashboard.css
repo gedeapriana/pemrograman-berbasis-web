@@ -1,0 +1,31 @@
+#dashboard-wrapper {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "profile" "social" "posts";
+}
+
+#dashboard-wrapper #dashboard-profile {
+  grid-area: profile;
+}
+
+#dashboard-wrapper #dashboard-posts {
+  grid-area: posts;
+}
+
+#dashboard-wrapper #dashboard-social {
+  grid-area: social;
+}
+
+@media (min-width: 768px) {
+  #dashboard-wrapper {
+    padding: 0 80px;
+    margin: 40px 0;
+    grid-template-columns: 1fr 0.7fr;
+    grid-template-rows: auto 0.5fr;
+    grid-template-areas: "profile posts" "social posts";
+    gap: 20px;
+  }
+}
+
+
+/*# sourceMappingURL=dashboard.css.map */

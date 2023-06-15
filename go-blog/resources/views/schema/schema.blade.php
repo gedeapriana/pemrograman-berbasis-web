@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{asset('css/root.css')}}">
     <link rel="stylesheet" href="{{asset('css/navbar.css')}}">
     <link rel="stylesheet" href="{{asset('css/home.css')}}">
+    <link rel="stylesheet" href="{{asset('css/dashboard.css')}}">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>go-blog | {{ $title }}</title>
   </head>

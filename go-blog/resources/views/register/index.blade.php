@@ -29,7 +29,7 @@
 
           <div class="my-2 w-full flex justify-center items-start flex-col">
             <label for="name" class="font-[raleway] font-bold">Nama Lengkap</label>
-            <input type="text" id="name" name="name" class="w-full border-[1px] border-slate-200 p-3 my-2 font-[raleway]" placeholder="Masukkan Nama Lengkap..." value="{{ old('full-name') }}"/>
+            <input type="text" id="name" name="name" class="w-full border-[1px] border-slate-200 p-3 my-2 font-[raleway]" placeholder="Masukkan Nama Lengkap..." value="{{ old('name') }}"/>
             @error('name')
               <p class="font-[raleway] ml-auto text-xs" style="color: #ff8585">{{ $message }}</p>
             @enderror

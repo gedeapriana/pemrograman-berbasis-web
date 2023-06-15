@@ -31,7 +31,7 @@
 
     </main>
     <footer class="w-full p-4 flex justify-end">
-      <a href="" class="font-[raleway] text-sm text-slate-50 bg-slate-950 py-2 px-3 inline-block">Kunjungi Profile</a>
+      <a href="/penulis/{{ $writer->username }}" class="font-[raleway] text-sm text-slate-50 bg-slate-950 py-2 px-3 inline-block">Kunjungi Profile</a>
     </footer>
   </article>
 @endforeach
