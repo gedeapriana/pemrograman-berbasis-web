@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  font-family: sans-serif;
+}
+
+.header {
+  text-align: center;
+  color: violet;
+}
+
+.sub-header {
+  text-align: center;
+  color: blue;
+}
+
+.member-header {
+  text-align: center;
+}
+
+.table-member {
+  margin: auto;
+}
+
+form {
+  margin: auto;
+}
+
+table.table-member > * > tr > td {
+  border: 1px solid #000;
+  border-collapse: collapse;
+  padding: 10px;
+}
+
