@@ -1,0 +1,24 @@
+@use 'variables' as var;
+
+.navbar {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	background-color: var.$black;
+
+	.nav-brand {
+		color: var.$white;
+	}
+
+	.nav-list {
+		display: flex;
+		gap: 20px;
+
+		li {
+			a {
+				color: var.$white;
+			}
+		}
+	}
+}

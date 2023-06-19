@@ -1,0 +1,14 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=global.css.map */

@@ -1,0 +1,19 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #353535;
+}
+.navbar .nav-brand {
+  color: #ffffff;
+}
+.navbar .nav-list {
+  display: flex;
+  gap: 20px;
+}
+.navbar .nav-list li a {
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=navbar.css.map */

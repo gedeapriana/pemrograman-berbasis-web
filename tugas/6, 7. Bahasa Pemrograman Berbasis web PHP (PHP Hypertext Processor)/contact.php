@@ -1,29 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Hubungi Kami</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halaman Kontak</title>
+  <link rel="stylesheet" type="text/css" href="css/global.css">
+  <link rel="stylesheet" type="text/css" href="css/navbar.css">
+  <link rel="stylesheet" type="text/css" href="css/contact.css">
 </head>
 <body>
-  <header>
-    <h1>Hubungi Kami</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Halaman Utama</a></li>
-        <li><a href="about.php">Tentang</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <h2>Informasi Kontak</h2>
-    <p>Silakan hubungi kami melalui:</p>
-    <ul>
-      <li>Email: info@perusahaan.com</li>
-      <li>Telepon: 123-456-789</li>
+  <nav class="navbar">
+    <a href="" class="nav-brand">Pemrograman Berbasis Web</a>
+    <ul class="nav-list">
+      <li><a href="./index.php">Beranda</a></li>
+      <li><a href="./about.php">Tentang</a></li>
+      <li><a href="./contact.php">Kontak</a></li>
     </ul>
+  </nav>
+
+  <main class="contact">
+    <h1>Hubungi Kami</h1>
+		<form action="">
+			<label for="nama">Nama</label>
+			<input type="text" id="nama" placeholder="Masukkan Nama">
+			<label for="nama">Email</label>
+			<input type="email" id="email" placeholder="Masukkan Email">
+			<label for="pesan">Pesan</label>
+      <textarea name="" id="pesan" placeholder="Masukkan Pesan"></textarea>
+      <button type="submit">Kirim</button>
+		</form>
   </main>
 
-  <script src="script.js"></script>
 </body>
 </html>
